@@ -31,5 +31,11 @@ class FrontendController extends Controller
 //        return $category;
     }
 
+    public function single_post(string $id){
+        return view('frontend.category.single_post',[
+            'post'=>Post::find($id)
+        ]);
+    }
+
 
 }

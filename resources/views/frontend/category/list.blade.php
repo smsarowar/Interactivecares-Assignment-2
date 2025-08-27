@@ -106,7 +106,7 @@
                                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-md text-xs">#trends</span>
                                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-md text-xs">#javascript</span>
                                     </div>
-                                    <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition">Read More</a>
+                                    <a href="{{route('single_post',$blog->id)}}" class="text-blue-600 font-medium hover:text-blue-800 transition">Read More</a>
                                 </div>
                             </div>
                         </article>
