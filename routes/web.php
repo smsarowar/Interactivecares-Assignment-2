@@ -11,6 +11,8 @@ use App\Http\Controllers\Frontend\FrontendController;
 //});
 
 Route::get('/',[FrontendController::class,'index'])->name('home');
+Route::get('login',[FrontendController::class,'login'])->name('login');
+Route::get('register',[FrontendController::class,'register'])->name('register');
 Route::get('/category/{slug}',[FrontendController::class,'category'])->name('category');
 
 Route::resource('category', CategoryController::class);

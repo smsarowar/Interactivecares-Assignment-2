@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $categories = Category::all();
-        View::composer('frontend.home.home', function ($view) use ($categories) {
+        View::composer('frontend.app', function ($view) use ($categories) {
             $view->with('categories', $categories);
         });
     }
